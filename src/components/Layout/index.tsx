@@ -1,14 +1,12 @@
 "use client";
 
 import type { Metadata } from "next";
-
 import { Poppins, Megrim } from "next/font/google";
-import "./globals.css";
+import "../../app/globals.css";
 import Header from "@/components/header";
 import ReduxProvider from "@/redux/redux-provider";
 import Head from "next/head";
 import Footer from "@/components/footer";
-import { createTheme, MantineProvider } from "@mantine/core";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,10 +18,6 @@ const megrim = Megrim({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-megrim",
-});
-
-const theme = createTheme({
-  /** Put your mantine theme override here */
 });
 
 // export const metadata: Metadata = {
@@ -40,24 +34,17 @@ export default function RootLayout({
     <ReduxProvider>
       <Head>
         <title>Spaces Vendor</title>
-        <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-          />
-        </Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
       </Head>
       <html lang="en">
         <body className={` ${poppins.variable} ${megrim.variable}`}>
-          <MantineProvider theme={theme}>
-            {children}
-            {/* <Header /> */}
-          </MantineProvider>
-          {/* <Footer /> */}
+          <Header />
+          {children}
+          <Footer />
         </body>
       </html>
     </ReduxProvider>
