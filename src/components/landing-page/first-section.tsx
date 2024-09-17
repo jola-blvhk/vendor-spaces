@@ -15,13 +15,13 @@ const FirstSection = () => {
         <div className="  grid md:grid-cols-2 max-width-section items-center h-full ">
           <div className=" grid  gap-y-4 md:gap-y-6">
             <Image src={Shop} alt="shop icon" />
-            <p className="text-lg text-primary-black-90 font-semibold">
+            <p className="text-base md:text-lg text-primary-black-90 font-semibold">
               Become a vendor
             </p>
-            <h1 className="text-white text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold">
               Sell With Us
             </h1>
-            <h3 className=" text-white max-w-[628px] md:text-lg ">
+            <h3 className=" text-base text-white max-w-[628px] md:text-lg ">
               Own and manage your personal vendor page and divert customers
               directly to you. Sell variety of interior wears including custom
               made furniture, accessories, lighting etc. Have access to the
