@@ -13,7 +13,7 @@ const FirstSection = () => {
         className=" h-[calc(100vh-80px)] lg:h-[calc(100vh-100px)] relative  padding-section"
       >
         <div className="  grid md:grid-cols-2 max-width-section items-center h-full ">
-          <div className=" grid  gap-y-4 md:gap-y-6">
+          <div className=" grid  gap-y-3 md:gap-y-4 lg:gap-y-6">
             <Image src={Shop} alt="shop icon" />
             <p className="text-base md:text-lg text-primary-black-90 font-semibold">
               Become a vendor
