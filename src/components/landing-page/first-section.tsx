@@ -27,16 +27,16 @@ const FirstSection = () => {
         src="../../assets/bg-images/lp-firstsection.png"
         className=" h-[calc(100vh-80px)] lg:h-[calc(100vh-100px)] relative  padding-section"
       >
-        <div className="  grid md:grid-cols-2 max-width-section gap-10 items-center h-full ">
+        <div className="  grid lg:grid-cols-2 max-width-section gap-10 items-center h-full ">
           <div className=" grid  gap-y-3 md:gap-y-4 lg:gap-y-6">
             <Image src={Shop} alt="shop icon" />
             <p className="text-base md:text-lg text-primary-black-90 font-semibold">
               Become a vendor
             </p>
-            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-white text-[32px] md:text-4xl lg:text-5xl font-semibold">
               Sell With Us
             </h1>
-            <h3 className=" text-sm md:text-base text-white max-w-[628px] lg:text-lg ">
+            <h3 className=" text-sm md:text-base  text-white max-w-[60%] md:max-w-[628px] lg:text-lg ">
               Own and manage your personal vendor page and divert customers
               directly to you. Sell variety of interior wears including custom
               made furniture, accessories, lighting etc. Have access to the
@@ -50,7 +50,7 @@ const FirstSection = () => {
               />
             </div>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Image
               src={firstsection}
               className="w-full h-[70%] object-contain"
