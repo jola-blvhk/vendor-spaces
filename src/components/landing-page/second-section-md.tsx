@@ -3,35 +3,15 @@ import first from "../../assets/landing-page/second-section/first.png";
 import second from "../../assets/landing-page/second-section/second.png";
 import third from "../../assets/landing-page/second-section/third.png";
 import fourth from "../../assets/landing-page/second-section/fourth.png";
+import line from "../../assets/bg-images/lp-secondsection.png";
 import ServiceBox from "./service-box";
 import Button from "../button";
+import Image from "next/image";
 
 const SecondSectionMd = () => {
-  const services = [
-    {
-      image: first,
-      title: "Manage payment and track transactions seamlessly.",
-    },
-    {
-      image: second,
-      title: "Access to the first and biggest interior customer base.",
-    },
-    {
-      image: third,
-      title: "Own your own personalized page, with personal link.",
-    },
-    {
-      image: second,
-      title: "No direct contact with customers/ consumers.",
-    },
-    {
-      image: fourth,
-      title: "Manage sales and track growth.",
-    },
-  ];
   return (
-    <div className="relative  mx-auto padding-section py-16 lg:py-24">
-      <div className="max-width-section grid gap-y-3">
+    <div className="relative  padding-section py-16 lg:py-24">
+      <div className=" relative max-width-section grid gap-y-3">
         <div className="grid h-[300px] grid-cols-3 gap-4 justify-between">
           <div className="grid gap-y-4 h-fit">
             <h2 className="text-2xl lg:text-3xl font-medium text-secondary-green-100">
@@ -57,10 +37,7 @@ const SecondSectionMd = () => {
             />
           </div>
           <div className="justify-self-end h-fit">
-            <ServiceBox
-              image={second}
-              title="Own your own personalized page, with personal link."
-            />
+            <ServiceBox image={second} title="Manage sales and track growth." />
           </div>
         </div>
         <div className="grid h-[300px] grid-cols-3 gap-4 justify-between">
@@ -83,6 +60,13 @@ const SecondSectionMd = () => {
             />
           </div>
         </div>
+        <Image
+          src={line}
+          className="absolute inset-0  m-auto w-[80%] h-auto object-contain"
+          alt="line"
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
