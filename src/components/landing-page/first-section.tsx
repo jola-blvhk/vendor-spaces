@@ -33,7 +33,7 @@ const FirstSection = () => {
             <p className="text-base md:text-lg text-primary-black-90 font-semibold">
               Become a vendor
             </p>
-            <h1 className="text-white text-[32px] md:text-4xl lg:text-5xl font-semibold">
+            <h1 className="text-white text-[34px] md:text-4xl lg:text-5xl font-semibold">
               Sell With Us
             </h1>
             <h3 className=" text-sm md:text-base  text-white max-w-[60%] md:max-w-[628px] lg:text-lg ">
@@ -42,7 +42,7 @@ const FirstSection = () => {
               made furniture, accessories, lighting etc. Have access to the
               biggest customer base for furniture retail in Nigeria.
             </h3>
-            <div className="w-[170px] md:w-[200px]">
+            <div className="w-[170px] md:w-[200px] mt-3 md:mt-0">
               <Button
                 title="Sign Up"
                 onclick={() => {}}
