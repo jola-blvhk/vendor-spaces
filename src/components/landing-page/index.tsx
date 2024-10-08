@@ -1,9 +1,8 @@
 import React from "react";
 import FirstSection from "./first-section";
 import SecondSection from "./second-section";
-import { useMediaQuery } from "react-responsive";
 import SecondSectionMd from "./second-section-md";
-import { BackgroundImage } from "@mantine/core";
+import NeedHelp from "./need-help";
 
 const LandingPage = () => {
   return (
@@ -16,6 +15,8 @@ const LandingPage = () => {
       <section className="hidden lg:block">
         <SecondSectionMd />
       </section>
+     
+      <NeedHelp />
     </>
   );
 };
