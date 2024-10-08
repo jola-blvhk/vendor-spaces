@@ -7,7 +7,7 @@ interface ServiceBoxProps {
 }
 const ServiceBox: React.FC<ServiceBoxProps> = ({ image, title }) => {
   return (
-    <div className="  rounded-2xl h-[250px] border border-secondary-green-100/40 flex flex-col items-center text-center relative z-10">
+    <div className=" lg:max-w-[330px] xl:max-w-[350px]  rounded-2xl h-[250px] border border-secondary-green-100/40 flex flex-col items-center text-center relative z-10">
       <Image
         src={image}
         alt={title}

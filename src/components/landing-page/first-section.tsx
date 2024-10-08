@@ -36,7 +36,7 @@ const FirstSection = () => {
             <h1 className="text-white text-[34px] md:text-4xl lg:text-5xl font-semibold">
               Sell With Us
             </h1>
-            <h3 className=" text-sm md:text-base  text-white max-w-[60%] md:max-w-[628px] lg:text-lg ">
+            <h3 className=" text-sm md:text-base  text-white max-w-[60%] md:max-w-[628px] ">
               Own and manage your personal vendor page and divert customers
               directly to you. Sell variety of interior wears including custom
               made furniture, accessories, lighting etc. Have access to the
@@ -46,7 +46,7 @@ const FirstSection = () => {
               <Button
                 title="Sign Up"
                 onclick={() => {}}
-                className="bg-white text-secondary-green-100 font-semibold text-base lg:text-lg"
+                className="bg-white text-secondary-green-100 font-semibold text-base "
               />
             </div>
           </div>

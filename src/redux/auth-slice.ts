@@ -5,7 +5,7 @@ export interface IAuthState {
 }
 
 const initialState: IAuthState = {
-  authState: true,
+  authState: false,
 };
 
 const authSlice = createSlice({
@@ -17,9 +17,6 @@ const authSlice = createSlice({
     },
   },
 });
-
-
-
 
 export const authActions = authSlice.actions;
 export default authSlice;

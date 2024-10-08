@@ -6,7 +6,7 @@ interface SlidingTextProps {
 
 const SlidingText: React.FC<SlidingTextProps> = ({ texts }) => {
   return (
-    <div className="relative overflow-hidden border border-red-600 ">
+    <div className="relative overflow-hidden  ">
       <div className="animate-scroll whitespace-nowrap flex items-center space-x-6">
         {texts.map((text, index) => (
           <React.Fragment key={index}>

@@ -31,7 +31,7 @@ const SecondSection = () => {
     },
   ];
   return (
-    <div className="relative  mx-auto padding-section py-12">
+    <div className="relative  padding-section py-12">
       <div className="max-width-section grid gap-y-8">
         {/* Title */}
         <div className="grid gap-y-2">
