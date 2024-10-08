@@ -15,7 +15,7 @@ const LandingPage = () => {
       <section className="hidden lg:block">
         <SecondSectionMd />
       </section>
-     
+
       <NeedHelp />
     </>
   );

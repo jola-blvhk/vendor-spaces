@@ -5,6 +5,7 @@ import firstsection from "../../assets/landing-page/first-section.png";
 import Button from "../button";
 import Image from "next/image";
 import SlidingText from "../sliding-text";
+import { useMediaQuery } from "react-responsive";
 
 const FirstSection = () => {
   const sliderTexts = [
@@ -21,10 +22,16 @@ const FirstSection = () => {
     "Eco-Friendly Materials",
     "Proudly Nigerian-Owned",
   ];
+  const isSmallScreen = useMediaQuery({ query: "(max-width: 1024px)" });
+
+  const backgroundImageSrc = isSmallScreen
+    ? "../../assets/bg-images/lp-firstsection-small.png"
+    : "../../assets/bg-images/lp-firstsection.png";
+
   return (
     <section className="w-screen overflow-hidden  ">
       <BackgroundImage
-        src="../../assets/bg-images/lp-firstsection.png"
+        src={backgroundImageSrc}
         className=" h-[calc(100vh-80px)] lg:h-[calc(100vh-100px)] relative  padding-section"
       >
         <div className="  grid lg:grid-cols-2 max-width-section gap-10 items-center h-full ">
